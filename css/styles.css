@@ -228,5 +228,6 @@ h2 {
       .nav-container,
       #name {
         display: flex;
+        flex-direction: row;
       }
 }
