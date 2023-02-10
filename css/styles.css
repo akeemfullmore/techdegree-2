@@ -1,0 +1,232 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+body {
+    max-width: 1100;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family: 'Chivo', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.175);
+}
+a {
+    color: black;
+    text-decoration: none;  
+}
+a:hover {
+    color: red;
+}
+ul li {
+    list-style: none;
+    border-radius: 30px;
+}
+img {
+    width: 100%;
+    margin: 0 auto;
+}
+footer {
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.175);
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+}
+h2 {
+    font-size: 1.25em;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+.nav-container {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 1em 1em 1em;
+    background-color: rgba(12, 170, 237, 0.415);
+}
+.main-nav {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.bio-container {
+    background-color: rgba(12, 170, 237, 0.415);
+}
+.profile-pic {
+    width: 225px;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+#name {
+    width: auto;
+    margin: 5px;
+    padding: 5px 5px;
+    font-size: 25px;
+}
+#home {
+    width: auto;
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: white;
+}
+#port {
+    width: auto;
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: white;
+}
+#contact {
+    width: auto;
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: white;
+}
+.content {
+    padding: 1em 1em 3em 1em;
+    background-color: rgba(221, 207, 16, 0.712);
+    font-weight: 300;
+}
+.contact {
+    padding: 1em 1em 3em 1em;
+    font-weight: 100;
+}
+ .footer-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-top: 2px solid black;
+    padding: 20px 5px 15px 5px;
+    font-size: 15px
+}
+.footer-name {
+    padding: .25em .25em;
+    flex-grow: 1;
+}
+.back-top {
+    padding: .25em .25em;
+    flex-grow: 1;
+    order: 1;
+}
+
+/* ================================= 
+  MEDIA QUERIES
+==================================== */
+@media (min-width: 300px) {
+    .footer-home,
+    .footer-portfolio,
+    .footer-contact {
+        visibility: hidden;
+    }
+}
+@media (min-width: 768px) {
+    .footer-home,
+    .footer-portfolio,
+    .footer-contact {
+        visibility: visible;
+    }
+    .back-top {
+        visibility: hidden;
+        padding: 0;
+        flex-grow: 4;
+        order: 2;
+    }
+    .footer-nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-name {
+        order: 1;
+        flex-grow: 3;
+    }
+    .footer-home {
+        order: 3;
+        padding: 0 0 0 10px;
+    }
+    .footer-portfolio {
+        order: 4;
+        padding: 0 10px 0 10px;
+    }
+    .footer-contact {
+        order: 5;
+        padding: 0 10px 0 0;
+    }
+    .nav-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #name {
+        align-items: center;
+        margin: 0 auto;
+    }
+    .main-nav {
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto;
+    }
+    #home,
+    #port,
+    #contact {
+        background: none;
+    }
+    .name {
+        padding-bottom: .5em;
+    }
+    .bio-container {
+        display: flex;
+        padding: 1em 1em 1em 1em;
+    }
+    .bio {
+        flex-wrap: wrap;
+        padding: 0 1em 1em 1em;
+        text-align: left;
+        margin-top: 0;
+        order: -1;
+    }
+    .profile-pic {
+        flex-basis: 500px;
+        padding: 0 5px 0 5px;
+    }
+    .row-1 {
+        display: flex;
+        flex-direction: row;
+    }
+    .row-2 {
+        display: flex;
+        flex-direction: row;
+    }
+    .row-3 {
+        display: flex;
+        flex-direction: row;
+    }
+    .marketing,
+    .search,
+    .travel,
+    .map,
+    .gallery,
+    .calc
+     {
+        display: flex;
+        flex-direction: column;
+        padding: 0 5px 15px 5px;
+    }
+    .content p {
+        padding: 0 20px 0 20px;
+        font-weight: 100;
+    }
+}
+@media (min-width: 1024px) {
+      .nav-container,
+      #name {
+        display: flex;
+      }
+}
