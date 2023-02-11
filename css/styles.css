@@ -92,6 +92,7 @@ h2 {
     background-color: white;
 }
 .content {
+    margin: 0 auto;
     padding: 1em 1em 3em 1em;
     background-color: rgba(221, 207, 16, 0.712);
     font-weight: 300;
@@ -232,20 +233,11 @@ h2 {
       }
       .content {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        text-align: center;
       }
       h2 {
         margin: 0 auto;
         padding: 0 1em 1em 1em;
       }
-      .desktop-1 {
-        display: flex;
-        flex-direction: row;
-      }
-      .desktop-2 {
-        display: flex;
-        flex-direction: row;
-      }
+
 }
